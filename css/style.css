@@ -1,9 +1,12 @@
-/* body {
-  font-family: 'Roboto', sans-serif;
+:root {
+  --text-body: #555555;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: var(--main-text);
+  color: var(--text-body);
   letter-spacing: 0.03em;
-} */
+}
 
 h1,
 h2,
@@ -25,16 +28,28 @@ img {
   display: block;
 }
 
-/* svg {
+svg {
   fill: currentColor;
-} */
+}
+
+.list--nonstyle {
+  list-style: none;
+}
 
 .link--nonstyle {
   text-decoration: none;
 }
 
-.list--nonstyle {
-  list-style: none;
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.address {
+  font-style: normal;
 }
 
 /* сокрытие заноловка */
