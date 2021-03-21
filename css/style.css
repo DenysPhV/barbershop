@@ -1,6 +1,19 @@
+/* 
+ --white: #ffffff; белый цвет
+  --text-prsmary-dark-bg: #9da4bd; первичный текст на темном фоне 
+  --text-secondary-dark-bg: #555555; вторичный текст на темном фоне
+  --black-text: #303030; Черный текст 
+  --hover-color: #ff6c00; текст состояния
+*/
+
 :root {
-  --text-body: #555555;
+  --white: #ffffff;
+  --text-prsmary-dark-bg: #9da4bd;
+  --text-secondary-dark-bg: #555555;
+  --black-text: #303030;
+  --hover-color: #ff6c00;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -32,6 +45,7 @@ svg {
   fill: currentColor;
 }
 
+/* ==== COMPONENTS ==== */
 .list--nonstyle {
   list-style: none;
 }
@@ -46,6 +60,11 @@ svg {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.conteiner__box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .address {
@@ -63,3 +82,23 @@ svg {
   width: 1px !important;
   overflow: hidden;
 }
+/* ==== END COMPONENTS ==== */
+
+/* ==== HAEDER ==== */
+.navigation {
+  display: flex;
+}
+
+.navigation-logo {
+  margin-right: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ==== END HAEDER ==== */ ;
