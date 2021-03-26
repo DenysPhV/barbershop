@@ -12,6 +12,7 @@
   --text-secondary-dark-bg: #555555;
   --black-text: #303030;
   --hover-color: #ff6c00;
+  --font-title: 'Raleway', sans-serif;
 }
 
 body {
@@ -60,11 +61,9 @@ svg {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
 
-.conteiner__box {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .address {
@@ -101,4 +100,161 @@ svg {
 .navigation-list .item:not(:last-child) {
   margin-right: 30px;
 }
-/* ==== END HAEDER ==== */ ;
+
+.logo {
+  fill: var(--black-text);
+}
+
+.header-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* ==== END HAEDER ==== */
+
+/* ==== HERO ==== */
+.hero-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* ==== END HERO ==== */
+
+/* ==== ABOUT-US ==== */
+.about-us-wrapper {
+  display: flex;
+}
+
+.about-us-list {
+  display: flex;
+}
+
+.about-us-item {
+  width: 50%;
+}
+.about-us-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us-description {
+  width: 50%;
+  padding-right: 36px;
+  padding-left: 33px;
+}
+/* ==== END ABOUT-US ==== */
+
+/* ==== PRICE_LIST ==== */
+.price-list-wrapper {
+  display: flex;
+}
+/* ==== END PRICE_LIST ==== */
+
+/* ==== ADVANTAGES ==== */
+.advantages-wrapper {
+  display: flex;
+}
+/* ==== END ADVANTAGES ==== */
+
+/* ==== ARTISAN ==== */
+.artisan-wrapper {
+}
+
+.artisan-wrapper-article {
+  margin-bottom: 20px;
+}
+
+.artisan-wrapper-title {
+  margin-bottom: 44px;
+
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+
+  color: var(--black-text);
+}
+
+.artisan-list {
+  display: flex;
+  text-align: center;
+
+  /* margin-left: -30px; */
+}
+
+.artisan-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.artisan-element-item {
+  margin-top: 30px;
+}
+
+.artisan-element-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.artisan-element-article {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+
+  color: var(--hover-color);
+}
+
+/* ==== END ARTISAN ==== */
+
+/* ==== GALLERY ==== */
+/* .gallery-wrapper {
+  
+} */
+.gallery-list {
+  display: flex;
+
+  margin-left: -30px;
+}
+
+.gallery-item {
+  margin-left: 30px;
+}
+
+/* ==== END GALLERY ==== */
+
+/* ==== FOOTER ==== */
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.footer__address {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer__wrapper .list--nonstyle {
+  display: flex;
+}
+
+.footer-item {
+}
+/* ==== END FOOTER ==== */ ;
